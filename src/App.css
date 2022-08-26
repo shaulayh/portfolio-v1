@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+/*===== VARIABLES CSS =====*/
+:root {
+    --header-height: 3rem;
+    --font-medium: 500;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*===== Colors =====*/
+:root {
+    --first-color: #5361FF;
+    --white-color: #FAFAFF;
+    --dark-color: #2A3B47;
+    --text-color: #697477;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*===== Margins =====*/
+:root {
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/*===== Fonts and typographic =====*/
+:root {
+    --body-font: 'Montserrat', sans-serif;
+    --big-font-size: 6.25rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
 }
 
-.App-link {
-  color: #61dafb;
+
+.slider {
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.image {
+    width: 100%;
+    height: 1000px;
+    object-fit: cover;
+    object-position: top;
+
 }
+
+body {
+
+    font-family: Montserrat, sans-serif;
+}
+
+.right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.left-arrow {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 3rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+}
+
+.slide {
+    opacity: 0;
+    transition-duration: 2s ease;
+}
+
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+}
+
+
+.measurement-container {
+
+    margin: 0 auto;
+    position: relative;
+    max-width: 1176px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.measurements-talent {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.measurement-talent {
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 5px 15px;
+    font-size: 14px;
+}
+
+.measurement-label {
+    font-family: var(--body-font);
+    font-weight: bold;
+}
+
+.portfolio-container {
+
+    width: 60%;
+    padding: 0% 20%;
+    justify-content: center;
+}
+
+
