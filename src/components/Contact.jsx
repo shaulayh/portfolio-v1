@@ -19,7 +19,7 @@ const Contact = () => {
 
         <ContactTag>
             <div className="portfolio-container">
-                <h1 className="section-title">Contact</h1>
+                <h1 className="section-title">Contact Info</h1>
                 <div className="contact">
                     <div className="contact__info">
                         <h3 className="contact__subtitle">EMAIL</h3>
