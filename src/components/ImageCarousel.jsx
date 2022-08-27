@@ -92,12 +92,12 @@ const ImageCarousel = ({slides}) => {
             <Navbar>
                 <ul>
                     <li>
-                        <a href="">
+                        <a href="/#">
                             <FaInstagram/>
                         </a>
                     </li>
                     <li>
-                        <a href="" className="link">
+                        <a href="/#" className="link">
                             <FaFacebook/>
                         </a>
                     </li>
@@ -115,14 +115,13 @@ const ImageCarousel = ({slides}) => {
             <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide}/>
             <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide}/>
             {DataCarousel.map((slide, index) => {
-                let image = String("./images/dsc9.JPG");
                 return (
                     <div
                         className={index === current ? 'slide active' : 'slide'}
                         key={index}
                     >
                         {index === current && (
-                            <img src={slide.url} alt='travel image' className='image'/>
+                            <img src={slide.url} className='image' alt=''/>
                         )}
                     </div>
                 );

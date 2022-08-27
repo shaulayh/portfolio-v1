@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const FooterTag = styled.section`
      width: 100%;
      height: auto;
-     background-color:black;
+     background-color:#042759;
      font-style: italic;
      font-family: 'Montserrat';
      font-size: small;
@@ -17,14 +17,22 @@ const FooterTag = styled.section`
         display:flex;
         justify-content: space-between;
      }
-     span{
-             color: #5361FF;
-            font-size: large;
-            font-style: normal;
-            text-transform: uppercase;
-     }
+     
      h1{
         text-align:center;
+     }
+     
+     .footer-menu{
+        display: flex;
+        justify-content:space-around;
+        li{
+            list-style:none;
+        }
+        
+        a{
+            color:white;
+            text-decoration:none;
+        }
      }
 `;
 
@@ -32,6 +40,24 @@ const FooterTag = styled.section`
 const Footer = () => {
     return (
         <FooterTag>
+            <div className="footer-menu">
+                <div className="footer__data">
+                    <h2 className="footer__title">EXPLORE</h2>
+                    <ul>
+                        <li><a href="#home" className="footer__link">Home</a></li>
+                        <li><a href="#about" className="footer__link">About</a></li>
+                        <li><a href="#skills" className="footer__link">Skills</a></li>
+                        <li><a href="#portfolio" className="footer__link">Portfolio</a></li>
+                        <li><a href="#Contact" className="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                <div className="footer__data">
+                    <h2 className="footer__title">FOLLOW</h2>
+                    <a href="#" className="footer__social"><i className='bx bxl-facebook'></i></a>
+                    <a href="#" className="footer__social"><i className='bx bxl-instagram'></i></a>
+                    <a href="#" className="footer__social"><i className='bx bxl-twitter'></i></a>
+                </div>
+            </div>
             <div className='footer-line'>
                 <div>
                     <p>Copyright &copy; 2022 Chantal Charles. All Rights Reserved</p>
@@ -40,9 +66,8 @@ const Footer = () => {
                     <p>Developed by: <span>Sholag International</span></p>
                 </div>
             </div>
-
             <div>
-                <a href="#"><h1>Goto Top</h1></a>
+                <a href="/#"><h1>Goto Top</h1></a>
             </div>
         </FooterTag>
     );

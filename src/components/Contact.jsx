@@ -32,11 +32,11 @@ const Contact = () => {
                         <span className="contact__text">Ul.Sikorskiego 42/70 , katowice. 40-276.Poland</span>
                     </div>
                     <div className="social-tab">
-                        <a href="#home">
+                        <a href="/#">
                             <FaInstagram/>
                         </a>
 
-                        <a href="#home">
+                        <a href="/#">
                             <FaFacebook/>
                         </a>
                     </div>

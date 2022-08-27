@@ -50,7 +50,6 @@
 }
 
 body {
-
     font-family: Montserrat, sans-serif;
 }
 
@@ -90,11 +89,9 @@ body {
 
 .measurement-container {
 
-    margin: 0 auto;
     position: relative;
     max-width: 1176px;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin: 5rem auto;
 }
 
 .measurements-talent {
@@ -118,8 +115,9 @@ body {
 .portfolio-container {
 
     width: 60%;
-    padding: 0% 20%;
+    padding: 0 20%;
     justify-content: center;
+    background-color: #FAFAFF;
 }
 
 
