@@ -69,73 +69,73 @@ const Portfolio = () => {
                 <div className="item">
                     <img src={myPhoto1} alt=""/>
                     <div className="portfolio__link">
-                        <a href="#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
+                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
                     </div>
                 </div>
                 <div className="item">
                     <img src={myPhoto2} alt=""/>
                     <div className="portfolio__link">
-                        <a href="#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
+                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
                     </div>
                 </div>
                 <div className="item">
                     <img src={myPhoto3} alt=""/>
                     <div className="portfolio__link">
-                        <a href="#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
+                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
                     </div>
                 </div>
                 <div className="item">
                     <img src={myPhoto4} alt=""/>
                     <div className="portfolio__link">
-                        <a href="#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
+                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
                     </div>
                 </div>
                 <div className="item">
                     <img src={myPhoto1} alt=""/>
                     <div className="portfolio__link">
-                        <a href="#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
+                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
                     </div>
                 </div>
                 <div className="item">
                     <img src={myPhoto2} alt=""/>
                     <div className="portfolio__link">
-                        <a href="#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
+                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
                     </div>
                 </div>
                 <div className="item">
                     <img src={myPhoto3} alt=""/>
                     <div className="portfolio__link">
-                        <a href="#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
+                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
                     </div>
                 </div>
                 <div className="item">
                     <img src={myPhoto4} alt=""/>
                     <div className="portfolio__link">
-                        <a href="#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
+                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
                     </div>
                 </div>
                 <div className="item">
                     <img src={myPhoto1} alt=""/>
                     <div className="portfolio__link">
-                        <a href="#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
+                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
                     </div>
                 </div>
                 <div className="item">
                     <img src={myPhoto2} alt=""/>
                     <div className="portfolio__link">
-                        <a href="#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
+                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
                     </div>
                 </div>
                 <div className="item">
                     <img src={myPhoto3} alt=""/>
                     <div className="portfolio__link">
-                        <a href="#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
+                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
                     </div>
                 </div>
                 <div className="item">
                     <img src={myPhoto4} alt=""/>
                     <div className="portfolio__link">
-                        <a href="#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
+                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
                     </div>
                 </div>
             </PortfolioWrapper>

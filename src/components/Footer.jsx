@@ -53,9 +53,9 @@ const Footer = () => {
                 </div>
                 <div className="footer__data">
                     <h2 className="footer__title">FOLLOW</h2>
-                    <a href="#" className="footer__social"><i className='bx bxl-facebook'></i></a>
-                    <a href="#" className="footer__social"><i className='bx bxl-instagram'></i></a>
-                    <a href="#" className="footer__social"><i className='bx bxl-twitter'></i></a>
+                    <a href="/#" className="footer__social"><i className='bx bxl-facebook'></i></a>
+                    <a href="/#" className="footer__social"><i className='bx bxl-instagram'></i></a>
+                    <a href="/#" className="footer__social"><i className='bx bxl-twitter'></i></a>
                 </div>
             </div>
             <div className='footer-line'>
