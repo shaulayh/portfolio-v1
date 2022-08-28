@@ -66,6 +66,9 @@ const Portfolio = () => {
         <div className="portfolio-container">
             <h1 className='section-title'>Portfolio</h1>
             <PortfolioWrapper>
+                {/*Todo: Fetch pictures from file*/}
+                {/*Todo: use react map to repeat*/}
+                {/*Todo: use light-box to display images in gallery*/}
                 <div className="item">
                     <img src={myPhoto1} alt=""/>
                     <div className="portfolio__link">
@@ -139,9 +142,6 @@ const Portfolio = () => {
                     </div>
                 </div>
             </PortfolioWrapper>
-            <div className="grid-wrapper">
-
-            </div>
         </div>
     );
 };

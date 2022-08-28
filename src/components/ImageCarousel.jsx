@@ -114,6 +114,7 @@ const ImageCarousel = ({slides}) => {
             </CarouselText>
             <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide}/>
             <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide}/>
+            {/*Todo:check ways to improve this part */}
             {DataCarousel.map((slide, index) => {
                 return (
                     <div

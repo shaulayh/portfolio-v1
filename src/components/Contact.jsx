@@ -18,6 +18,7 @@ const Contact = () => {
     return (
 
         <ContactTag>
+            {/*Todo:change the details to agent/client contact*/}
             <div className="portfolio-container">
                 <h1 className="section-title">Contact Info</h1>
                 <div className="contact">

@@ -1,15 +1,16 @@
-import logo from './images/dsc1.JPG'
-import logo2 from './images/dsc2.JPG'
+import carouselPhoto1 from './images/dsc1.JPG'
+import carouselPhoto2 from './images/dsc2.JPG'
+import carouselPhoto3 from './images/dsc3.JPG'
 
 export const DataCarousel = [
     {
-        url: logo
+        url: carouselPhoto1
     },
     {
-        url: logo2
+        url: carouselPhoto2
     },
     {
-        url: logo
+        url: carouselPhoto3
     },
 ];
 
