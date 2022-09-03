@@ -10,6 +10,14 @@ const ContactTag = styled.section`
             .social-tab{
                 font-size:5rem;
             }
+            @media only screen and (max-width: 600px) {
+                .contact {
+                        display:block;
+                }
+                .social-tab{
+                    margin-top: 10px;
+                }
+            }
     
 `;
 

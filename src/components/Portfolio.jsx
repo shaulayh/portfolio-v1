@@ -63,7 +63,7 @@ const PortfolioWrapper = styled.div`
 
 const Portfolio = () => {
     return (
-        <div className="portfolio-container">
+        <div className="portfolio-container" id="portfolio">
             <h1 className='section-title'>Portfolio</h1>
             <PortfolioWrapper>
                 {/*Todo: Fetch pictures from file*/}

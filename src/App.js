@@ -26,21 +26,25 @@ const theme = {
     }
 };
 
-function App() {
 
-    return (
-        <ThemeProvider theme={theme}>
-            <>
-                <GlobalStyles/>
-                <ImageCarousel slides={DataCarousel}/>
-                <About/>
-                <Measurement/>
-                <Portfolio/>
-                <Contact/>
-                <Footer/>
-            </>
-        </ThemeProvider>
-    )
+class App extends React.Component {
+    render() {
+
+        return (
+            <ThemeProvider theme={theme}>
+                <>
+                    <GlobalStyles/>
+                    <ImageCarousel slides={DataCarousel}/>
+                    <About/>
+                    <Measurement/>
+                    <Portfolio/>
+                    <Contact/>
+                    <Footer/>
+                </>
+            </ThemeProvider>
+        )
+    }
 }
+
 
 export default App;
