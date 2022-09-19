@@ -1,9 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
+
 import myPhoto1 from './images/dsc3.JPG'
 import myPhoto2 from './images/dsc1.JPG'
 import myPhoto3 from './images/dsc2.JPG'
 import myPhoto4 from './images/dsc10.jpg'
+import myPhoto5 from './images/dsc00141.JPG'
+import myPhoto6 from './images/dsc6.JPG'
+import myPhoto7 from './images/dsc5.JPG'
+import myPhoto8 from './images/dsc00027.JPG'
+import myPhoto9 from './images/dsc00031.JPG'
+import myPhoto10 from './images/dsc00034.JPG'
 import styled from 'styled-components'
+import FsLightbox from 'fslightbox-react';
 
 const PortfolioWrapper = styled.div`
     
@@ -62,6 +70,41 @@ const PortfolioWrapper = styled.div`
 
 
 const Portfolio = () => {
+    const [lightBoxController, setLightboxController] = useState({
+        toggler: false,
+        slide: 1
+    });
+
+    function openLightboxOnSlide(number) {
+        setLightboxController({
+            toggler: !lightBoxController.toggler,
+            slide: number
+        });
+    }
+
+    const dataDisplay = [
+        myPhoto1,
+        myPhoto2,
+        myPhoto3,
+        myPhoto4,
+        myPhoto10,
+        myPhoto5,
+        myPhoto6,
+        myPhoto7,
+        myPhoto8,
+        myPhoto9,
+        myPhoto10,
+        'https://i.imgur.com/fsyrScY.jpg',
+        'https://www.youtube.com/watch?v=3nQNiWdeH2Q',
+        'https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+        myPhoto4,
+        myPhoto5,
+        myPhoto6,
+        myPhoto7,
+        myPhoto8,
+    ];
+
+    console.log(dataDisplay[0]);
     return (
         <div className="portfolio-container" id="portfolio">
             <h1 className='section-title'>Portfolio</h1>
@@ -69,79 +112,27 @@ const Portfolio = () => {
                 {/*Todo: Fetch pictures from file*/}
                 {/*Todo: use react map to repeat*/}
                 {/*Todo: use light-box to display images in gallery*/}
-                <div className="item">
-                    <img src={myPhoto1} alt=""/>
-                    <div className="portfolio__link">
-                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
-                    </div>
-                </div>
-                <div className="item">
-                    <img src={myPhoto2} alt=""/>
-                    <div className="portfolio__link">
-                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
-                    </div>
-                </div>
-                <div className="item">
-                    <img src={myPhoto3} alt=""/>
-                    <div className="portfolio__link">
-                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
-                    </div>
-                </div>
-                <div className="item">
-                    <img src={myPhoto4} alt=""/>
-                    <div className="portfolio__link">
-                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
-                    </div>
-                </div>
-                <div className="item">
-                    <img src={myPhoto1} alt=""/>
-                    <div className="portfolio__link">
-                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
-                    </div>
-                </div>
-                <div className="item">
-                    <img src={myPhoto2} alt=""/>
-                    <div className="portfolio__link">
-                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
-                    </div>
-                </div>
-                <div className="item">
-                    <img src={myPhoto3} alt=""/>
-                    <div className="portfolio__link">
-                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
-                    </div>
-                </div>
-                <div className="item">
-                    <img src={myPhoto4} alt=""/>
-                    <div className="portfolio__link">
-                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
-                    </div>
-                </div>
-                <div className="item">
-                    <img src={myPhoto1} alt=""/>
-                    <div className="portfolio__link">
-                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
-                    </div>
-                </div>
-                <div className="item">
-                    <img src={myPhoto2} alt=""/>
-                    <div className="portfolio__link">
-                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
-                    </div>
-                </div>
-                <div className="item">
-                    <img src={myPhoto3} alt=""/>
-                    <div className="portfolio__link">
-                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
-                    </div>
-                </div>
-                <div className="item">
-                    <img src={myPhoto4} alt=""/>
-                    <div className="portfolio__link">
-                        <a href="/#" className='portfolio__link-name' data-lightbox="mygallery">View Images</a>
-                    </div>
-                </div>
+                {dataDisplay.map((data, index) => {
+                    return (
+                        <div className="item">
+                            <img src={data} alt=""/>
+                            <div className="portfolio__link">
+                                <a href="/#" onClick={() => openLightboxOnSlide(index + 1)}
+                                   className='portfolio__link-name'
+                                   data-lightbox="mygallery">View Content</a>
+                            </div>
+                        </div>
+                    )
+                })}
             </PortfolioWrapper>
+            <>
+                <FsLightbox
+                    toggler={lightBoxController.toggler}
+                    sources={dataDisplay}
+                    slide={lightBoxController.slide}
+                    types={['image', 'image', null, null, null]}
+                />
+            </>
         </div>
     );
 };
