@@ -13,6 +13,7 @@ import myPhoto10 from './images/dsc00034.JPG'
 import styled from 'styled-components'
 import FsLightbox from 'fslightbox-react';
 
+
 const PortfolioWrapper = styled.div`
     
 
@@ -116,7 +117,7 @@ const Portfolio = () => {
                     return (
                         <div className="item">
                             <img src={data} alt=""/>
-                            <div className="portfolio__link">
+                            <div onClick={() => openLightboxOnSlide(index + 1)} className="portfolio__link">
                                 <a href="/#" onClick={() => openLightboxOnSlide(index + 1)}
                                    className='portfolio__link-name'
                                    data-lightbox="mygallery">View Content</a>

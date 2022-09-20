@@ -27,12 +27,12 @@ const Contact = () => {
 
         <ContactTag>
             {/*Todo:change the details to agent/client contact*/}
-            <div className="portfolio-container">
+            <div className="portfolio-container" id="contact">
                 <h1 className="section-title">Contact Info</h1>
                 <div className="contact">
                     <div className="contact__info">
                         <h3 className="contact__subtitle">EMAIL</h3>
-                        <p className="contact__text">shaulayham@yahoo.com</p>
+                        <p className="contact__text">chantalchalo@gmail.com</p>
 
                         <h3 className="contact__subtitle">PHONE</h3>
                         <span className="contact__text">+48729344581</span>
@@ -52,6 +52,7 @@ const Contact = () => {
                 </div>
             </div>
         </ContactTag>
+
     );
 };
 
